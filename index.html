@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form Exam</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1 id="title">Encuesta de Arte <span class="span">(Examen freeCodeCamp)</span></h1>
+        <p id="description">Examen de freeCodeCamp para survey forms</p>
+      </header>
+      <form id="survey-form" action="">
+        <section class="form-group">
+          <label id="name-label" for="name">Nombre</label>
+          <input class="form-control" type="text" name="name" id="name" required placeholder="Escribe tu nombre">
+        </section>
+        <section class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input class="form-control" type="email" name="email" id="email" required placeholder="Escribe tu email">
+        </section>
+        <section class="form-group">
+          <label id="number-label" for="number">Edad<span class="span">(Opcional)</span></label>
+          <input class="form-control" type="number" name="age" id="number" min="12" max="120" placeholder="Edad">
+        </section>
+        <section class="form-group">
+          <label for="dropdown">Con que materiales te gusta trabajar mas?</label>
+          <select class="form-control" name="dropdown" id="dropdown">
+            <option value="" selected="true" disabled>Selecciona uno</option>
+            <option value="markers">Marcadores de alcohol</option>
+            <option value="colors">Colores de madera</option>
+            <option value="acrilic">Pintura acrilica</option>
+            <option value="acuarel">Acuarelas</option>
+          </select>
+        </section>
+        <section class="form-group">
+          <p>Que tan frecuente dibujas?</p>
+          <label for="7">
+            <input class="input-radio" type="radio" name="frecuently" id="7" value="all-days">
+            Todos los días
+          </label>
+          <label for="5">
+            <input class="input-radio" type="radio" name="frecuently" id="5" value="five-days">
+            5 veces por semana
+          </label>
+          <label for="1">
+            <input class="input-radio" type="radio" name="frecuently" id="1" value="one-day">
+            1 vez a la semana
+          </label>
+        </section>
+        <section class="form-group">
+          <p>Seleciona los tipos de arte que más te gustan <span class="span">(Puedes seleccionar varios)</span></p>
+          <label for="realismo">
+            <input class="input-checkbox" type="checkbox" name="art-love" id="realismo" value="realismo">
+            Realismo
+          </label>
+          <label for="fotorre">
+            <input class="input-checkbox" type="checkbox" name="art-love" id="fotorre" value="fotorre">
+            Fotorrealismo
+          </label>
+          <label for="abstracto">
+            <input class="input-checkbox" type="checkbox" name="art-love" id="abstracto" value="abstracto">
+            Abstracto
+          </label>
+          <label for="oleo">
+            <input class="input-checkbox" type="checkbox" name="art-love" id="oleo" value="oleo">
+            Óleo
+          </label>
+          <label for="acuarela">
+            <input class="input-checkbox" type="checkbox" name="art-love" id="acuarela" value="acuarela">
+            Acuarela
+          </label>
+          <label for="goache">
+            <input class="input-checkbox" type="checkbox" name="art-love" id="goache" value="goache">
+            Goache
+          </label>
+          <label for="digital">
+            <input class="input-checkbox" type="checkbox" name="art-love" id="digital" value="digital">
+            Digital
+          </label>
+        </section>
+        <section class="form-group">
+          <p>Alguna otra cosa que te guste del arte?</p>
+          <textarea class="text-area" class="text-area" name="comment" id="comments" placeholder="inserta tu comentario aquí..."></textarea>
+        </section>
+        <input class="submit-button" type="submit" value="Submit" id="submit">
+      </form>
+    </div> 
+</body>
+</html>
